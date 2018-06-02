@@ -4,6 +4,7 @@
 body {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 200;
+	background: image_url('bg.png');
 }
 
 .navbar {
@@ -68,4 +69,15 @@ h1, h2, h3, h4, h5, h6, .navbar {
   color: #000;
   background-color: #ddd;
   border-color: #ddd;
+}
+
+.feature {
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.feature h3 {
+	font-family: 'Assistant', sans-serif;
+	font-weight: 200px;
 }
