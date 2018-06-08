@@ -16,6 +16,9 @@ a:hover {
 	text-decoration: none;
 }
 
+.clear {
+	clear: both;
+}
 .navbar {
 	font-family: 'Assistant', sans-serif;
 	box-shadow: 0px 1px 3px #2a2a2a;
@@ -32,14 +35,24 @@ a:hover {
 	color: #fff;
 }
 
+.row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  flex-flow: row wrap;
+}
+
 .hero {
 	background: image_url('hero.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -50,6 +63,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	font-family: 'Assistant', sans-serif;
+	margin-top: 7%;
+	margin-bottom: 7%;
 }
 
 .frosty h1 {
@@ -117,4 +132,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .booyah-box h2, .booyah-box h1 {
 	margin: 10px;
+}
+
+.align-middle {
+  align-items: center;
 }
