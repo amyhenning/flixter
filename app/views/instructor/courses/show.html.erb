@@ -5,13 +5,24 @@
 	<%= link_to 'Preview as a student', course_path(@course), class: 'btn btn-warning float-right' %>
 	<br class="clear" />
 	<div class="text-center">
-		<%= link_to 'Add a new section', new_instructor_course_section_path(@course), class: 'btn btn-primary' %>
+		<%= link_to 'New section', new_instructor_course_section_path(@course), class: 'btn btn-primary' %>
 	</div>
 
 	<ul>
 		<% @course.sections.each do |section| %>
 			<li>
 				<%= section.title %>
+				<%= link_to 'New lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary' %> 
+				<br class="clear" />
+				<ul>
+					<% section.lessons.each do |lesson| %>
+						<li>
+							<b><%= lesson.title %></b>
+							- <%= lesson.subtitle %>
+						</li>
+					<% end %>
+				</ul>
+				<br class="clear" />
 			</li>
 		<% end %>
 	</ul>
