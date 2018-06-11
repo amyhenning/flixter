@@ -2,18 +2,17 @@
 <div class="booyah-box col-10 offset-1">
 	<h1 class="text-center"><%= @course.title %></h1>
 	<br/>
-	<%= link_to 'Preview as a student', course_path(@course), class: 'btn btn-warning float-right' %>
+	<%= link_to 'Preview as a student', course_path(@course), class: 'btn btn-danger float-right' %>
 	<br class="clear" />
 	<div class="text-center">
-		<%= link_to 'New section', new_instructor_course_section_path(@course), class: 'btn btn-primary' %>
+		<%= link_to 'Add a section', new_instructor_course_section_path(@course), class: 'btn btn-primary' %>
 	</div>
-
+	<br />
 	<ul>
 		<% @course.sections.each do |section| %>
 			<li>
-				<%= section.title %>
-				<%= link_to 'New lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary' %> 
-				<br class="clear" />
+				<h2><%= section.title %>
+				<%= link_to 'New lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary float-right' %></h2>
 				<ul>
 					<% section.lessons.each do |lesson| %>
 						<li>

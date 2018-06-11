@@ -107,6 +107,18 @@ h1, h2, h3, h4, h5, h6, .navbar {
   border-color: #ddd;
 }
 
+.btn-danger {
+	color: #fff;
+	background-color: #dd0675;
+	border-color: #ddd;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #b70360;
+  border-color: #ddd;
+}
+
 .feature {
 	width: 100%;
 	padding-left: 5%;
