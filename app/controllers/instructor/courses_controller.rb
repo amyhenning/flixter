@@ -28,6 +28,7 @@ class Instructor::CoursesController < ApplicationController
 
 	helper_method :current_course
 	def current_course
+	#	binding.pry
 		@current_course ||= Course.find(params[:id])
 	end
 
