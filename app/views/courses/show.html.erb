@@ -14,6 +14,14 @@
 				<br />
 				<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
 			<% end %>
+
+			<br />
+			<br />
+			<% if current_user && current_user.enrolled_in?(@course) %>
+				<h3 class="badge badge-info">You are enrolled!</h3>
+			<% else %>
+				<%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-secondary', method: :post %>
+			<% end %>
 		</div>
 
 		<div class="col-sm-9 col-12">
@@ -28,7 +36,7 @@
 				<h3>
 					<%= section.title %>
 				</h3>
-				<div class="row card-deck">
+				<div class="card-deck">
 					<% section.lessons.each do |lesson| %>
 						<div class="col-12 col-sm-6 mt-4">
 							<div class="card card-body lesson text-center h-100">

@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	font-family: 'Assistant', sans-serif;
 	margin-top: 7%;
 	margin-bottom: 7%;
+	border-radius: 0.25rem;
+
 }
 
 .frosty h1 {
@@ -192,4 +194,8 @@ hr {
 .section {
 	padding: 20px;
 	margin-top: 10px;
+}
+
+.badge-info {
+	background-color: #0bc4b1;
 }
