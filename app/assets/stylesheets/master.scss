@@ -80,10 +80,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .btn-success {
-	border-radius: 0;
-}
-
-.btn-success {
 	color: #000;
 	background-color: #fff;
 	border-color: #fff;
@@ -137,6 +133,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-radius: 0.25rem;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
@@ -167,4 +164,28 @@ hr {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.lesson {
+	background-color: rgba(36, 32, 33, 0.9);
+	margin-top: 20px;
+	border-radius: 0.25rem;
+	padding: 4%;
+}
+
+.lesson a {
+	color: #fff;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.lesson a h4 {
+	font-weight: 400;
+	margin: 0;
+}
+
+.section {
+	padding: 20px;
+	margin-top: 10px;
 }

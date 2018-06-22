@@ -20,21 +20,29 @@
 			<%= @course.description %>
 		</div>
 	</div>
-
+	<br />
 	<div class="col-12">
 		<% @course.sections.each do |section| %>
+			<hr />
 			<div class="section">
-				<%= section.title %>
-				<% section.lessons.each do |lesson| %>
-					<div class="lesson">
-						<%= link_to lesson_path(lesson) do %>
-							<b><%= lesson.title %></b>
-							-
-							<%= lesson.subtitle %>
-						<% end %>
-					</div>
-				<% end %>
+				<h3>
+					<%= section.title %>
+				</h3>
+				<div class="row">
+					<% section.lessons.each do |lesson| %>
+						<div class="col-12 col-sm-6">
+							<div class="card-body lesson text-center">
+								<span class="card-title"><%= link_to lesson_path(lesson) do %></span>
+									<span class="card-text"><h4><%= lesson.title %></h4></span>
+									<%= lesson.subtitle %>
+								<% end %>
+							</div>
+						</div>
+					<% end %>
+				</div>
+				<br class="clear" />
 			</div>
 		<% end %>
 	</div>
+
 </div>
