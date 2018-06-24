@@ -29,7 +29,7 @@ a:hover {
 	font-family: 'Antic', sans-serif;
 	font-size: 30px;
 	color: #fff;
-}
+	}
 
 .navbar-inverse .navbar-brand:hover {
 	color: #fff;
@@ -66,19 +66,18 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	margin-top: 7%;
 	margin-bottom: 7%;
 	border-radius: 0.25rem;
-
 }
 
 .frosty h1 {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 200;
-	text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+	text-shadow: 1px 0px 8px rgba(150, 150, 150, 0.75);
 }
 
 .frosty h2 {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 300;
-	text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+	text-shadow: 1px 0px 8px rgba(150, 150, 150, 0.75);
 }
 
 .btn-success {
@@ -126,6 +125,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .feature h3 {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 200px;
+	text-shadow: 1px 0px 8px rgba(150, 150, 150, 0.75);
 }
 
 .booyah-box {
@@ -198,4 +198,8 @@ hr {
 
 .badge-info {
 	background-color: #0bc4b1;
+}
+
+h1 {
+	text-shadow: 1px 0px 8px rgba(150, 150, 150, 0.75);
 }
