@@ -5,6 +5,7 @@
 	<br /><br />
 	<div class="row">
 		<div class="col-sm-3 col-12">
+			Cost:
 			<% if @course.free? %>
 				<span class="badge badge-default">
 					FREE
@@ -15,13 +16,6 @@
 				</span>
 			<% end %>
 
-			<% if current_user && current_user == @course.user %>
-				<br />
-				<br />
-				<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger' %>
-			<% end %>
-
-			<br />
 			<br />
 			<% if current_user %>
 				<% if current_user && current_user.enrolled_in?(@course) %>
@@ -43,6 +37,13 @@
 			<% else %>
 				<h3 class="badge badge-info">Sign in to Enroll!</h3>
 			<% end %>
+
+			<% if current_user && current_user == @course.user %>
+				<br />
+				<br />
+				<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger' %>
+			<% end %>
+
 		</div>
 
 		<div class="col-sm-9 col-12">
