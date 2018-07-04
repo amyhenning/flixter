@@ -194,7 +194,7 @@ hr {
 }
 
 .section {
-	padding: 20px;
+	padding: 10px;
 	margin-top: 10px;
 }
 
@@ -212,6 +212,7 @@ ul {
   border-radius: 0.25rem;
   padding: 2%;
   margin: 3%;
+  background-color: white;
 }
 
 ul .header {
@@ -238,4 +239,10 @@ ul .header .fa {
 
 .lessons li p {
 	margin: 0;
+}
+
+.team-image {
+	float: left;
+	margin-right: 3%;
+	width: 200px;
 }

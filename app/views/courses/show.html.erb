@@ -40,41 +40,37 @@
 			<% else %>
 				<h3 class="badge badge-info">Sign in to Enroll!</h3>
 			<% end %>
-
 			<% if current_user && current_user == @course.user %>
 				<br />
 				<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger' %>
 			<% end %>
-
 		</div>
 
 		<div class="col-sm-9 col-12">
 			<%= @course.description %>
 		</div>
 	</div>
-	<br />
-	<div class="col-12">
-		<% @course.sections.rank(:row_order).each do |section| %>
-			<hr />
-			<div class="section">
-				<h3>
-					<%= section.title %>
-				</h3>
-				<div class="card-deck">
-					<% section.lessons.rank(:row_order).each do |lesson| %>
-						<div class="col-12 col-sm-6 mt-4">
-							<div class="card card-body lesson text-center h-100">
-								<%= link_to lesson_path(lesson) do %>
-									<h4><%= lesson.title %></h4>
-									<%= lesson.subtitle %>
-								<% end %>
-							</div>
+</div>
+<% @course.sections.rank(:row_order).each do |section| %>
+	<div class="booyah-box col-10 offset-1">
+		<div class="section ">
+			<h3>
+				<%= section.title %>
+			</h3>
+			<div class="card-deck">
+				<% section.lessons.rank(:row_order).each do |lesson| %>
+					<div class="col-12 col-sm-6 mt-4">
+						<div class="card card-body lesson text-center h-100">
+							<%= link_to lesson_path(lesson) do %>
+								<h4><%= lesson.title %></h4>
+								<%= lesson.subtitle %>
+							<% end %>
 						</div>
-					<% end %>
-				</div>
-				<br class="clear" />
+					</div>
+				<% end %>
 			</div>
-		<% end %>
+			<br class="clear" />
+		</div>
 	</div>
-
+<% end %>
 </div>

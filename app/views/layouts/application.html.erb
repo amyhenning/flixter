@@ -27,16 +27,16 @@
 		    <ul class="navbar-nav">
 		    	<% if user_signed_in? %>
 		    		<li class="nav-item">
-		    			<%= link_to 'My dashboard', dashboard_path, class: 'nav-link' %>
+		    			<%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
 		    		</li>
 			    	<li class="nav-item">
-			    		<%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+			    		<%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
 		    	<% else %>
 			      <li class="nav-item">
-			      	<%= link_to 'Log in', new_user_session_path, class: 'nav-link' %>
+			      	<%= link_to 'Log In', new_user_session_path, class: 'nav-link' %>
 			      </li>
 			     	<li class="nav-item">
-			      	<%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
+			      	<%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
 			    <% end %>
 		      </li>
 		    </ul>
@@ -66,11 +66,11 @@
 			  	<div class="col-12 col-sm-3">
 			  		<b>About</b>
 			  		<br />
-			  		<%= link_to 'Team', '#' %>
+			  		<%= link_to 'Team', team_path %>
 			  		<br />
-			  		<%= link_to 'Careers', '#' %>
+			  		<%= link_to 'Careers', careers_path %>
 			  		<br />
-			  		<%= link_to 'Privacy Policy', '#' %>
+			  		<%= link_to 'Privacy Policy', privacy_path %>
 			  	</div>
 			  	<div class="col-12 col-sm-3">
 			  		<b>Contact</b>
@@ -87,11 +87,11 @@
 			  		<%= link_to 'http://github.com/amyhenning' do %>
 			  			<span class="fa fa-github-square fa-2x social-button"></span>
 			  		<% end %>
+			  		<%= link_to 'http://www.linkedin.com/in/amymhenning' do %>
+			  			<span class="fa fa-linkedin-square fa-2x social-button"></span>
+			  		<% end %>
 			  		<%= link_to 'https://twitter.com/henningamy' do %>
 			  			<span class="fa fa-twitter-square fa-2x social-button"></span>
-			  		<% end %>
-			  		<%= link_to 'https://www.instagram.com/henninga/?hl=en' do %>
-			  			<span class="fa fa-instagram fa-2x social-button"></span>
 			  		<% end %>
 			  	</div>
 			  </div>
