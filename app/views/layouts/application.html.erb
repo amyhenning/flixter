@@ -55,9 +55,46 @@
 
 	  <div id="footer">
 	  	<div class="container">
-	  		<b>Teachers</b>
-	  		<br />
-	  		<%= link_to 'Teach a Course', new_instructor_course_path %>
+	  		<div class="row">
+	  			<div class="col-12 col-sm-3">
+			  		<b>Teachers</b>
+			  		<br />
+			  		<%= link_to 'Teach a Course', new_instructor_course_path %>
+			  		<br />
+			  		<%= link_to 'My Dashboard', dashboard_path %>
+			  	</div>
+			  	<div class="col-12 col-sm-3">
+			  		<b>About</b>
+			  		<br />
+			  		<%= link_to 'Team', '#' %>
+			  		<br />
+			  		<%= link_to 'Careers', '#' %>
+			  		<br />
+			  		<%= link_to 'Privacy Policy', '#' %>
+			  	</div>
+			  	<div class="col-12 col-sm-3">
+			  		<b>Contact</b>
+			  		<br />
+			  		<%= mail_to 'henning.amy@gmail.com' do %>
+			  			henning.amy@gmail.com
+			  		<% end %>
+			  		<br />
+			  		Denver, CO
+			  	</div>
+			  	<div class="col-12 col-sm-3">
+			  		<b>Social</b>
+			  		<br />
+			  		<%= link_to 'http://github.com/amyhenning' do %>
+			  			<span class="fa fa-github-square fa-2x social-button"></span>
+			  		<% end %>
+			  		<%= link_to 'https://twitter.com/henningamy' do %>
+			  			<span class="fa fa-twitter-square fa-2x social-button"></span>
+			  		<% end %>
+			  		<%= link_to 'https://www.instagram.com/henninga/?hl=en' do %>
+			  			<span class="fa fa-instagram fa-2x social-button"></span>
+			  		<% end %>
+			  	</div>
+			  </div>
 	  	</div>
 	  </div>
 
