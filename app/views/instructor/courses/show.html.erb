@@ -47,9 +47,9 @@
 	</div>
 </div>
 
-
 	<ul class="sections">
 		<% current_course.sections.rank(:row_order).each do |section| %>
+		<div class="col-10 offset-1">
 			<li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
 				<div class="header">
 					<span class="fa fa-ellipsis-v"></span>
@@ -83,9 +83,9 @@
 					<% end %>
 				</ul>
 			</li>
+		</div>
 		<% end %>
 	</ul>
-</div>
 
 <!-- New Section Modal -->
 <div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
