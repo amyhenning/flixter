@@ -4,7 +4,7 @@ Flixter is a two-sided, video-streaming marketplace platform that features credi
 
 ## Features
 
-* Student and teacher role management using Devise
+* Student and teacher role management using Devise and advanced database relationships
 
 * Image and video uploads with course and lesson creation
 
