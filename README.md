@@ -8,7 +8,7 @@ Flixter is a two-sided, video-streaming marketplace platform that features credi
 
 * Image and video uploads with course and lesson creation
 
-* Dynamic course management for instructors using JavaScript
+* Dynamic course management using JavaScript for instructors
 
 * Credit card payments through Stripe
 
